@@ -1,0 +1,275 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "articulat-cf", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: "slnt" 0, "wdth" 100, "wght" 194.2857;
+    background-color: rgb(255, 255, 255);
+    line-height: 1.5;
+    font-size: 16px;
+    margin-top: 0;
+    /* margin: 0; */
+}
+
+main {
+    border-top: 1px solid #000;
+    padding-top: 8px;
+
+}
+
+h1 {
+    margin: 0;
+    font-size: 16px;
+    font-variation-settings: "slnt" 0, "wdth" 100, "wght" 100;
+}
+
+h2 {
+    font-family: "articulat-cf", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 16px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    /* padding-bottom: 30px;
+    padding-top: 30px; */
+    /* border-bottom: 1px solid black;  */
+}
+
+.index img {
+    padding-bottom: 30px;
+    padding-top: 30px;
+    border-bottom: 1px solid black;
+}
+
+p {
+    max-width: 300px;
+}
+
+/* header */
+
+.header {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+    padding-bottom: 10px;
+    border-bottom: 1px solid black;
+    font-family: "articulat-cf", sans-serif;
+    font-weight: 100;
+}
+
+.header a {
+    text-decoration: none;
+    color: currentColor;
+    font-family: "articulat-cf", sans-serif;
+    font-weight: 100;
+}
+
+.nav {
+    display: grid;
+    justify-content: left;
+    gap: 12px;
+    max-width: 100%;
+}
+
+.nav a {
+    text-decoration: none;
+    color: currentColor;
+}
+
+.nav a span {
+    display: block;
+    padding: 12px;
+}
+
+/* projets */
+
+.projets {
+    background-color: rgb(239, 239, 239);
+}
+
+.projets h1 {
+    font-size: 16px;
+    font-family: "articulat-cf", sans-serif;
+    font-weight: 100;
+}
+
+
+.item {
+    transition: all .3s;
+}
+
+.item:hover {
+    filter: blur(70);
+}
+
+
+.index {
+    display: grid;
+    grid-template-columns: 1fr 432px;
+}
+
+/* SIDEBAR FIXE À DROITE PAR-DESSUS TOUT */
+.sidebar {
+    /* position:fixed;
+    top: 0;
+    right: 0; */
+    position: sticky;
+    top: 0px;
+    margin-top: -8px;
+    height: 100vh;
+    background: white;
+    /* display: flex; */
+
+    border: 1px solid black;
+    /* <<< contour noir >>> */
+
+    padding: 20px 15px;
+    overflow-y: auto;
+    z-index: 9999;
+    font-family: "articulat-cf", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px;
+}
+
+.contactetcv {
+    font-family: "articulat-cf", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+
+}
+
+/* NAVIGATION */
+.sidebar ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.sidebar li {
+    margin: 0;
+    padding: 10px 0;
+    border-bottom: 1px solid black;
+    /* <<< filet sous chaque lien >>> */
+}
+
+.sidebar li:last-child {
+    border-bottom: none;
+    /* pas de filet après le dernier */
+}
+
+.sidebar a {
+    color: #000000;
+    text-decoration: none;
+    font-weight: lighter;
+}
+
+.sidebar a:hover {
+    text-decoration: underline;
+    transition: 0.5s;
+}
+
+.p1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5em;
+}
+
+.col-right {
+    font-size: 14px;
+    color: dimgrey;
+}
+
+.p2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5em;
+}
+
+.col-right {
+    font-size: 14px;
+    color: dimgrey;
+}
+
+/* Container du slideshow */
+.slideshow-container {
+    position: relative;
+    max-width: 1000px;
+    /* ajuste à ta mise en page */
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Chaque slide */
+.slide {
+    display: none;
+}
+
+.slide img {
+    width: 100%;
+    display: block;
+}
+
+/* Animation fondu */
+.fade {
+    animation: fadeEffect 0.8s ease;
+}
+
+@keyframes fadeEffect {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* Les flèches */
+.prev, .next {
+  position: absolute;
+  top: 50%;             /* centre verticalement */
+  transform: translateY(-50%); /* corrige l’alignement */
+  z-index: 10;
+  color: white !important;
+  font-size: 40px !important;
+  z-index: 9999 !important;
+  font-weight: 100 !important;
+  font-style: normal;
+}
+
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.header2 {
+    font-family: "articulat-cf", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 16px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid black;
+    font-size: 16px;
+}
+
+h3 {
+    font-family: "articulat-cf", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 16px;
+    /* padding-bottom: 12px; */
+    margin: 0;
+}
+
